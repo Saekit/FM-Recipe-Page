@@ -15,9 +15,10 @@ export const HeroImg = styled.img`
 
 export const RecipeTitle = styled.h1`
   font-family: "Young Serif", serif;
+  color: hsl(24, 5%, 18%);
 `;
 
-export const RecipeDesc = styled.p``;
+export const StyledDesc = styled.p``;
 
 export const PrepTimeContainer = styled.div`
   background-color: hsl(330, 100%, 98%);
@@ -80,5 +81,35 @@ export const InstructionsListItem = styled(StyledListItem)`
 `;
 
 export const DividerLine = styled.hr`
-  border-top: 1px solid gray;
+  border-top: 1px solid hsl(30, 18%, 87%);
+`;
+
+export const StyledTable = styled.table`
+  width: 100%;
+  text-align: left;
+`;
+
+export const StyledTableBody = styled.tbody``;
+
+export const StyledTableRow = styled.tr``;
+
+export const StyledTableHeader = styled.th`
+  font-weight: 400;
+  padding: 10px 0px 10px 30px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+`;
+
+export const StyledTableData = styled.td`
+  color: hsl(14, 45%, 36%);
+  font-weight: 800;
+  padding: 10px 0px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+`;
+
+export const StyledTableHeaderLast = styled(StyledTableHeader)`
+  border: none;
+`;
+
+export const StyledTableDataLast = styled(StyledTableData)`
+  border: none;
 `;

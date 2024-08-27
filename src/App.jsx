@@ -3,7 +3,7 @@ import {
   HeroImg,
   PrepTimeContainer,
   RecipeCardContainer,
-  RecipeDesc,
+  StyledDesc,
   RecipeTitle,
   PrepTimeTitle,
   DividerLine,
@@ -14,6 +14,13 @@ import {
   StyledListItem,
   InstructionsList,
   InstructionsListItem,
+  StyledTable,
+  StyledTableRow,
+  StyledTableHeader,
+  StyledTableData,
+  StyledTableBody,
+  StyledTableHeaderLast,
+  StyledTableDataLast,
 } from "./App.style";
 import omeletteImg from "./assets/images/image-omelette.jpeg";
 
@@ -22,11 +29,11 @@ function App() {
     <RecipeCardContainer>
       <HeroImg src={omeletteImg} alt="Recipe Image" />
       <RecipeTitle>Simple Omelette Recipe</RecipeTitle>
-      <RecipeDesc>
+      <StyledDesc>
         An easy and quick dish, perfect for any meal. This classic omelette
         combines beaten eggs cooked to perfection, optionally filled with your
         choice of cheese, vegetables, or meats.
-      </RecipeDesc>
+      </StyledDesc>
       <PrepTimeContainer>
         <PrepTimeTitle>Preparation time</PrepTimeTitle>
         <StyledList>
@@ -94,6 +101,34 @@ function App() {
 
       <SectionContainer>
         <SectionTitle>Nutrition</SectionTitle>
+        <StyledDesc>
+          {" "}
+          The table below shows nutritional values per serving without the
+          additional fillings.
+        </StyledDesc>
+        <StyledTable>
+          <StyledTableBody>
+            <StyledTableRow>
+              <StyledTableHeader>Calories</StyledTableHeader>
+              <StyledTableData>277kcal</StyledTableData>
+            </StyledTableRow>
+
+            <StyledTableRow>
+              <StyledTableHeader>Carbs</StyledTableHeader>
+              <StyledTableData>0g</StyledTableData>
+            </StyledTableRow>
+
+            <StyledTableRow>
+              <StyledTableHeader>Protein</StyledTableHeader>
+              <StyledTableData>20g</StyledTableData>
+            </StyledTableRow>
+
+            <StyledTableRow>
+              <StyledTableHeaderLast>Fat</StyledTableHeaderLast>
+              <StyledTableDataLast>22g</StyledTableDataLast>
+            </StyledTableRow>
+          </StyledTableBody>
+        </StyledTable>
       </SectionContainer>
     </RecipeCardContainer>
   );
