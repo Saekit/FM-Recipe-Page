@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RecipeCardContainer = styled.div`
   background-color: white;
   border-radius: 25px;
-  max-width: 800px;
+  max-width: 650px;
   padding: 35px;
 `;
 
@@ -16,6 +16,7 @@ export const HeroImg = styled.img`
 export const RecipeTitle = styled.h1`
   font-family: "Young Serif", serif;
   color: hsl(24, 5%, 18%);
+  font-size: 2.5rem;
 `;
 
 export const StyledDesc = styled.p``;
@@ -60,6 +61,7 @@ export const PrepListItem = styled(StyledListItem)`
 export const SectionTitle = styled.h2`
   color: hsl(14, 45%, 36%);
   font-family: "Young Serif", serif;
+  font-size: 1.75rem;
 `;
 
 export const SectionContainer = styled.div`
